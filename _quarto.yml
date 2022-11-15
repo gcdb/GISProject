@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "GISProject"
+  navbar:
+    left:
+      - href: intro.html
+        text: Introduction
+      - href: methodology.html
+        text: Methodology
+      - href: analysis.html
+        text: Analysis
+      - href: finding.html
+        text: Results & Discussion 
+    right:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
