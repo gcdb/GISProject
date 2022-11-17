@@ -349,8 +349,7 @@ under Processing Toolbox and select Convex hull
 
 #### *Find and Calculate the Number of Primary Schools Accessible by Buffers (1km_affected)*
 
-Under the Vector menu bar, select Analysis Tools -\> Count Points in Polygon. You will create two pairs of\
-primary school count, one (consisting of all and curr) for each buffer
+Under the Vector menu bar, select Analysis Tools -\> Count Points in Polygon. You will create two pairs of primary school count, one (consisting of all and curr) for each buffer
 
 ![](images/paste-487E0564.png) 1. Rename the temporary layer, Count, as\
 - all when your input for Points is all\
@@ -377,14 +376,18 @@ primary school count, one (consisting of all and curr) for each buffer
 #### *Find and Calculate the Number of Primary Schools Accessible by Walking the Shortest (1km_affected)*
 
 Under the Vector menu bar, select Analysis Tools -\> Count Points in Polygon. You will create two pairs of\
-primary school count, one (consisting of all and curr) for each walking polygon ![](images/paste-D49896E7.png)
+primary school count, one (consisting of all and curr) for each walking polygon
+
+![](images/paste-D49896E7.png)
 
 With the steps above, create 1KM_SWALKING_PERC_CHANGE and 2KM_SWALKING_PERC_CHANGE
 
 #### *Find and Calculate the Number of Primary Schools Accessible by Drivingthe Shortest (1km_affected)*
 
 Under the Vector menu bar, select Analysis Tools -\> Count Points in Polygon. You will create two pairs of\
-primary school count, one (consisting of all and curr) for each driving polygon ![](images/paste-94A4B216.png)
+primary school count, one (consisting of all and curr) for each driving polygon
+
+![](images/paste-94A4B216.png)
 
 With the steps above, create 1KM_SDRIVING_PERC_CHANGE and 2KM_SDRIVING_PERC_CHANGE\
 At the end, the attribute table of 1km_affected should look like the following: ![](images/paste-0F767433.png)
