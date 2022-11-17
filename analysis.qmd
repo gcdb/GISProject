@@ -47,12 +47,15 @@ screenshot below shows a data frame of the affected residentials:
 
 ![](images/paste-119D9659.png)
 
-Since the buffer zone covers a greater area as compared to the output polygons created from QNEAT3, there is a larger number of affected residentials represented by the buffer zone and is about 2 to 3 times as large as the number of residentials represented by the output polygons.\
+Since the buffer zone covers a greater area as compared to the output polygons created from QNEAT3, there is a larger number of affected residentials represented by the buffer zone and is about 2 to 3 times as large as the number of residentials represented by the output polygons.
+
+\
 When looking from the 1km proximity distance from the closed schools, the closure of schools could\
 affect up to 16 residential areas (taken from the closure of East Coast Primary School). When looking\
 from the 2km proximity distance from the closed schools, the closure of schools could affect up to 55\
-residential areas (taken from the closure of Balestier Hill Primary School). From just looking at the data collected by using the buffer method, an average of 14 and 50 residential areas are affected within a\
-1km and 2km buffer respectively.\
+residential areas (taken from the closure of Balestier Hill Primary School). From just looking at the data collected by using the buffer method, an average of 14 and 50 residential areas are affected within a 1km and 2km buffer respectively.
+
+\
 With 3 closures in the East, 3 closures in the Central and 1 closure in the North, we have taken a closer\
 look at the subzone analysis that we have previously done. In the Eastern region of Singapore nearer\
 towards the Tampines and Pasir Ris subzones, the proportion of schools to students in these areas are\
@@ -62,8 +65,7 @@ Central region and especially where East Coast Primary School and Macpherson Pri
 once located, the subzones also mostly show a larger proportion of schools to students, which does\
 correspond to the government's decision to close these 2 schools. However, Balestier Hill Primary\
 School (located centrally) and Da Qiao Primary School (located in the North) have subzones where the\
-ratio of schools to students are roughly equal as compared to all the subzones in Singapore. By using the same deduction, the closure of these 2 schools would result in a higher student to school ratio, equating to a lack of access to schools in these subzones due to high enrolment rates (assuming students apply\
-for schools near their residential areas).
+ratio of schools to students are roughly equal as compared to all the subzones in Singapore. By using the same deduction, the closure of these 2 schools would result in a higher student to school ratio, equating to a lack of access to schools in these subzones due to high enrolment rates (assuming students apply for schools near their residential areas).
 
 #### *Number of Schools Accessible After the Merger*
 
@@ -71,13 +73,11 @@ We also wanted to quantify the impact of school closures for each residential ce
 looking at the change in the number of primary schools accessible based on a transport mode. As the\
 top 2 transport modes of primary school students were by walking and driving\
 (https://www.singstat.gov.sg/find-data/search-by-theme/population/mode-of-transport/visualising-\
-data/mode-of-transport-dashboard), we looked at both. We looked at the percentage change\
-(reduction), instead of the absolute difference as it gives a more accurate representation of how\
-residents are affected.\
-Of the 88 affected residentials that are within 1km proximity of the closed primary schools, we discovered that 3/5 of them still have the same number of primary schools accessible, by walking, within 1km from where they live (ie a change of 0%). A tenth of them had to walk beyond 1km but not more\
-than a driving distance of 2km. An interesting note is that due to the short distance travelled, the change in accessibility did not vary much between the two different transport modes. One obvious difference\
-between walking and driving is that the residentials who walked had a greater proportion of more than 50% reduction in accessibility. This means that while there is some disruption to the residents'\
-accessibility, the impact is not too great.
+data/mode-of-transport-dashboard), we looked at both. We looked at the percentage change (reduction), instead of the absolute difference as it gives a more accurate representation of how\
+residents are affected.
+
+\
+Of the 88 affected residentials that are within 1km proximity of the closed primary schools, we discovered that 3/5 of them still have the same number of primary schools accessible, by walking, within 1km from where they live (ie a change of 0%). A tenth of them had to walk beyond 1km but not more than a driving distance of 2km. An interesting note is that due to the short distance travelled, the change in accessibility did not vary much between the two different transport modes. One obvious difference between walking and driving is that the residentials who walked had a greater proportion of more than 50% reduction in accessibility. This means that while there is some disruption to the residents' accessibility, the impact is not too great.
 
 ![](images/paste-C76071B4.png)
 
@@ -92,17 +92,12 @@ residentials above. The only proportion that remained unchanged is when the trav
 #### *Calculation of Affected Residentials*
 
 The first limitation of this method is that due to human error of tracing the polygon, the number of\
-residential centroids may differ slightly from each user to another user. In order to reduce this error, we\
-can zoom in to the polygon as close as we can to trace the shape as accurately as possible. The second\
-limitation is that the distance between two schools may be so close that the polygons may intersect one\
-another, which would lead to inaccurate results. In order to reduce this limitation, we can try to find an\
-equal distance between both schools and split the polygon into half.
+residential centroids may differ slightly from each user to another user. In order to reduce this error, we can zoom in to the polygon as close as we can to trace the shape as accurately as possible. The second limitation is that the distance between two schools may be so close that the polygons may intersect one another, which would lead to inaccurate results. In order to reduce this limitation, we can try to find an equal distance between both schools and split the polygon into half.
 
 #### *Use of (Centroids of) Hexagonal Grids to Represent Affected Residentials*
 
 By using hexagonal grids to represent groups of residential landuse areas on the mainland layer, it\
-creates an inaccuracy of the number of residential buildings that have truly been affected by the closure of the schools. In addition, even though some parts of the grid may be covered by the buffer or output\
-polygons, the hexagonal grid will not be selected if the centroid does not overlap. Therefore, the size of the hexagonal grid used is a limitation that we had to consider as assigning a centroid to each residential landuse area/building would have been computationally too intensive.
+creates an inaccuracy of the number of residential buildings that have truly been affected by the closure of the schools. In addition, even though some parts of the grid may be covered by the buffer or output polygons, the hexagonal grid will not be selected if the centroid does not overlap. Therefore, the size of the hexagonal grid used is a limitation that we had to consider as assigning a centroid to each residential landuse area/building would have been computationally too intensive.
 
 #### *Method of finding Shortest Path and Fastest Time*
 
