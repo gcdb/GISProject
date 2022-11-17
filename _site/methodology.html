@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PriMERGEry - Methodology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PriMERGEry</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./overview.html">Overview</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html">Proposal</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./methodology.html" aria-current="page">Methodology</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./analysis.html">Analysis &amp; Lesson Learnt</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.html">Poster</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a>
+  <ul class="collapse">
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning">Data Cleaning</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Methodology</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="methodology" class="level1">
+<h1>Methodology</h1>
+<p>Here’s the <a href="https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69wssQCK/edit?usp=sharing&amp;ouid=115568116821271386627&amp;rtpof=true&amp;sd=true">link</a> to our project report.</p>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
+<p>Before we begin, ensure that your QGIS active window has the correct projected coordinates system:<br>
+EPSG: 3414. For all subsequent layers used, do save them in 3414 before processing.</p>
+<section id="creating-mainland-layer-of-singapore-excluding-secondary-islands" class="level5">
+<h5 class="anchored" data-anchor-id="creating-mainland-layer-of-singapore-excluding-secondary-islands"><em>Creating mainland layer of Singapore (excluding secondary islands)</em></h5>
+<p>1. Under your Browser panel, look for master-plan-2019-subzone-boundary-no-sea-kml.kml and<br>
+add URA_MP19_SUBZONE_NO_SEA_PL to your Layers panel. The layer should look like this:</p>
+<p><img src="images/paste-A3B8FE1B.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Use the Select Features by Freehand tool to draw out the mainland of Singapore like below:</li>
+</ol>
+<p><img src="images/paste-D376F1FC.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>On your Layers panel, click Export -&gt; Save Selected Features As<br>
+</li>
+<li>Create new GeoPackage folder, Project, and name the new layer as mainland<br>
+</li>
+<li>Remove the raw data layer, URA_MP19_SUBZONE_NO_SEA_PL, that was downloaded as we<br>
+have our new mainland layer</li>
+</ol>
+</section>
+<section id="creating-primary-school-students-by-subzone-layer" class="level5">
+<h5 class="anchored" data-anchor-id="creating-primary-school-students-by-subzone-layer"><em>Creating Primary School Students by Subzone layer</em></h5>
+<p>1. Load respopagesex2011to2020 layer onto Layers panel<br>
+2. Under Database menu bar, select DB Manager and execute the following query:</p>
+<p>select “SZ”, “Age”, sum (“Pop”) as “POP2019”<br>
+from respopagesex2011to2020<br>
+where “Time” = ‘2019’<br>
+group by “SZ”, “Age”</p>
+<p><br>
+3. Load the executed query as a new layer and untick geometry<br>
+4. Use Select by Expression tool in the attribute table to select:<br>
+Age in (7,8,9,10,11,12)<br>
+5. Use Field Calculator tool, create a new field containing Subzone names in uppercase:<br>
+Upper("SZ")<br>
+6. Save Selected Feature as prisch_student_sz, untick geometry<br>
+7. Open mainland layer and join table</p>
+<p><img src="images/paste-BF9D02E4.png" class="img-fluid"></p>
+<p>8. Save the joined layer as mainland_joined<br>
+9. Use Select by Expression tool in the attribute table to select:<br>
+“prisch_student_sz_POP2019” is null</p>
+<p><br>
+10. Use Field Calculator to update mainland_joined's existing field NULL values to 0 <img src="images/paste-8C38A204.png" class="img-fluid"></p>
+</section>
+<section id="section" class="level5">
+<h5 class="anchored" data-anchor-id="section"></h5>
+<ol start="11" type="1">
+<li>Save the layer as mainland_with_student</li>
+</ol>
+<p><em>Creating Choropleth Map of Primary School Students in Each Subzone</em></p>
+<p>1. Double-click on mainland_with_student, select Symbology<br>
+2. Select Graduated<br>
+Value: prisch_student_sz_POP2019<br>
+Mode: Natural breaks (Jenks)<br>
+3. Click on Classify</p>
+<p><img src="images/paste-9F6DC2CE.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Return to your QGIS active window. Your map should look like the following</li>
+</ol>
+<p><img src="images/paste-D9D68D38.png" class="img-fluid"></p>
+</section>
+<section id="creating-all_primary_schools-layer" class="level5">
+<h5 class="anchored" data-anchor-id="creating-all_primary_schools-layer"><em>Creating all_primary_schools layer</em></h5>
+<p>With the current school-directory-and-information.csv file, the 7 closed schools have been removed.<br>
+We need to manually add their school name, address, and postal code into the CSV file. We can find<br>
+these on Google.<br>
+For us to geocode our school points onto our mainland layer more accurately, we need to modify<br>
+school-directory-and-information.csv to include the x and y coordinates. We can use SLA OneMap API<br>
+to help us. Read the code chunks below into your RStudio environment. Enter the lines in blue into your<br>
+console.</p>
+<p><img src="images/paste-5F1657C4.png" class="img-fluid"></p>
+<p><img src="images/paste-C5961FD8.png" class="img-fluid"></p>
+<p>Now that we have more complete csv file, found.csv, we can add it in our QGIS as a point layer<br>
+1. Under the Layer menu bar, select Add Layer -&gt; Add Delimited Text Layer<br>
+2. Select the found.csv that you've just created and fill up the rest accordingly. Ensure that your<br>
+Geometry CRS is in 3414.</p>
+<p><img src="images/paste-FEBB84F3.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>A new layer, found, will be added to your Layers panel. Save the layer into your Project<br>
+Geopackage as geocoded_schools<br>
+</li>
+<li>Open the attribute table of geocoded_schools. Use Select by Expression tool to filter only the<br>
+primary schools. You should have 194 selected features, with 3 rows having NULL for column<br>
+results.</li>
+</ol>
+<p><img src="images/paste-56B65526.png" class="img-fluid"><br>
+5. Save Selected Features As all_primary_schools into your Project GeoPackage 6. Open the attribute table of all_primary_schools<br>
+7. Under the school_name field, look for MACPHERSON PRIMARY SCHOOL<br>
+8. Enable the Toggle Editing tool and delete away one of the duplicated row</p>
+<p><img src="images/paste-FDB41B57.png" class="img-fluid"></p>
+<ol start="9" type="1">
+<li>Disable the Toggle Editing tool to save the changes made</li>
+</ol>
+</section>
+<section id="creating-closed_primary_schools-layer" class="level5">
+<h5 class="anchored" data-anchor-id="creating-closed_primary_schools-layer"><em>Creating closed_primary_schools layer</em></h5>
+<p>From the attribute table of all_primary_schools, select the 7 closed primary schools (Balestier Hill<br>
+Primary School, Coral Primary School, Da Qiao Primary School, East Coast Primary School, East View<br>
+Primary School, Loyang Primary School, and Macpherson Primary School) that have already been added<br>
+in. This can be done quicker by filtering the school_name field.<br>
+After the 7 closed schools have been selected, we can save the Selected Features into the Project<br>
+GeoPackage and name the new layer as closed_primary_schools.</p>
+<p><img src="images/paste-B13505D3.png" class="img-fluid"></p>
+</section>
+<section id="creating-current_primary_schools-layer" class="level5">
+<h5 class="anchored" data-anchor-id="creating-current_primary_schools-layer"><em>Creating current_primary_schools layer</em></h5>
+<p>From the attribute table of all_primary_schools, we can click on the Invert Feature Selection button that<br>
+would select the other 183 primary schools.<br>
+After the 183 schools have been selected, we can Save Selected Features As current_primary_schools<br>
+into the Project GeoPackage</p>
+<p><img src="images/paste-11F94EB0.png" class="img-fluid"></p>
+</section>
+<section id="creating-choropleth-map-of-schools-in-each-subzone" class="level5">
+<h5 class="anchored" data-anchor-id="creating-choropleth-map-of-schools-in-each-subzone"><em>Creating Choropleth Map of Schools in Each Subzone</em></h5>
+<p>1. Under Vector menu bar, select Analysis Tools -&gt; Count Point in Polygon<br>
+2. Enter the following inputs<br>
+- Ensure to set Invalid feature filtering to Do Not Filter (Better Performance)</p>
+<p><img src="images/paste-C0E38140.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Save the temporary file, Count, as all_school_in_subzone<br>
+</li>
+<li>Double-click on all_school_in_subzone, select Symbology<br>
+</li>
+<li>Select Categorized<br>
+</li>
+</ol>
+<ul>
+<li>Value: all_school_in_subzone<br>
+</li>
+</ul>
+<ol start="6" type="1">
+<li>Click on Classify<br>
+</li>
+<li>Change the Symbol for Value 0 to white</li>
+</ol>
+<p><img src="images/paste-C59C4CA1.png" class="img-fluid"></p>
+<p><img src="images/paste-AB21F405.png" class="img-fluid"></p>
+</section>
+<section id="creating-walking-layer" class="level5">
+<h5 class="anchored" data-anchor-id="creating-walking-layer"><em>Creating walking layer</em></h5>
+<p>1. Load gis_osm_roads_free_1.shp onto your Layers panel<br>
+2. Save it in 3414 projected system as roads_3414 into your Project GeoPackage<br>
+3. Use Select by Location tool to select all the roads in mainland layer<br>
+4. Save Selected Features As all_roads into your Project GeoPackage<br>
+5. Open the attribute table of all_roads<br>
+6. Use Select Features by Expression tool and enter the following</p>
+<p><img src="images/paste-A5629B95.png" class="img-fluid"> 7. Save Selected Features As walking into your Project GeoPackage</p>
+</section>
+<section id="creating-privatedriving-layer" class="level5">
+<h5 class="anchored" data-anchor-id="creating-privatedriving-layer"><em>Creating privatedriving layer</em></h5>
+<p>1. Open the attribute table of all_roads<br>
+2. Use Select Features by Expression tool and enter the following</p>
+<p><img src="images/paste-98BB29A7.png" class="img-fluid"> 3. Save Selected Features As privatedriving into your Project GeoPackage</p>
+</section>
+<section id="creating-hex_residentials-and-hex_residentials_centroids-layer" class="level5">
+<h5 class="anchored" data-anchor-id="creating-hex_residentials-and-hex_residentials_centroids-layer"><em>Creating hex_residentials and hex_residentials_centroids layer</em></h5>
+<p>1. Load gis_osm_landuse_a_free_1.shp onto Layers panel<br>
+2. Save it in 3414 projected system as landuse_3414 into your Project GeoPackage<br>
+3. Use Select Features by Expression tool to filter only residentials<br>
+4. Save Selected Features As residential_landuse into your Project GeoPackage<br>
+5. Use Select by Location tool to select all the residentials in mainland<br>
+- Ensure to set Invalid feature filtering to Do Not Filter (Better Performance)<br>
+6. Save Selected Features as mainland_residential_landuse<br>
+7. Under the Vector menu bar, select Research Tools -&gt; Create Grid. Fill up the following<br>
+- For Grid extent, select mainland_residential_landuse</p>
+<p><img src="images/paste-C6A9A283.png" class="img-fluid"> 8. A temporary layer, Grid, appears under Layers panel<br>
+9. Use Select by Location tool to select all the hexagons in the temporary layer, Grid, that intersect<br>
+with mainland_residential_landuse</p>
+<p><img src="images/paste-16D45A8F.png" class="img-fluid"></p>
+<p>10. Save Select Features As hex_residentials into your Project GeoPackage<br>
+11. Remove temporary layer, Grid from Layers panel 12. Under the Vector menu bar, select Geometry Tools -&gt; Centroids</p>
+<p><img src="images/paste-AB93002B.png" class="img-fluid"><br>
+13. Save temporary layer, Centroids, as hex_residentials_centroids into your Project GeoPackage<br>
+14. Remove the temporary layer, Centroids, from your Layers panel. Below is how your QGIS active<br>
+window would look like if the centroids are successfully created</p>
+<p><img src="images/paste-6D5B9F1C.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="data-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h2>
+<section id="find-the-relative-student-to-school-ratio-in-subzones" class="level5">
+<h5 class="anchored" data-anchor-id="find-the-relative-student-to-school-ratio-in-subzones"><em>Find the Relative Student to School Ratio in Subzones</em></h5>
+<p>From the 2 choropleth maps of students (in blue) and schools (in red) distribution in each subzone, we<br>
+will create print layouts for each and export them as JPG files.<br>
+Using external tools such as Photoshop or other photo editing software, overlay the 2 maps on top of<br>
+each other and change the layer blend mode to multiply. The resulting image should look like this.</p>
+<p><img src="images/paste-DABB54FB.png" class="img-fluid"></p>
+</section>
+<section id="find-the-number-of-affected-residentials" class="level5">
+<h5 class="anchored" data-anchor-id="find-the-number-of-affected-residentials"><em>Find the Number of Affected Residentials</em></h5>
+<p>a. Buffer The first method we will use to find the affected residentials of the closure of schools will be by using<br>
+the buffering method.<br>
+1. Under the Vector menu bar, select Geoprocessing Tools -&gt; Buffer<br>
+2. Enter the following inputs</p>
+<p><img src="images/paste-CAFA6A41.png" class="img-fluid"><img src="images/paste-58B2F07A.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>2 temporary Buffered layers have been added to your Layers panel<br>
+</li>
+<li>Export these layers into the Project GeoPackage and name the new layers as closed_1kmb and<br>
+closed_2kmb respectively</li>
+</ol>
+<p><img src="images/paste-5B52C0C1.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>2 temporary Buffered layers have been added to your Layers panel<br>
+</li>
+<li>Export these layers into the Project GeoPackage and name the new layers as closed_1kmb and<br>
+closed_2kmb respectively<br>
+</li>
+<li>Remove the 2 temporary layers from your Layers panel<br>
+</li>
+<li>Click on hex_residentials_centroids to activate the layer<br>
+</li>
+<li>Using the Select Features by Radius tool, select the centroids that lie within all the buffer zones<br>
+surrounding the closed schools<br>
+</li>
+<li>Save the layers respectively as 1km_affected and 2km_affected into your Project GeoPackage</li>
+</ol>
+<p><br>
+b. QNEAT3<br>
+i. Shortest Path<br>
+The second method we will use to find the affected residentials of the closure of schools will be by using<br>
+the shortest path method 1. Under Processing Toolbox, search for QNEAT3<br>
+2. Select the Iso-Area as Polygons (from Layer)</p>
+<p><img src="images/paste-90C45CBB.png" class="img-fluid"></p>
+<p>Since we are trying to find the shortest path of 1km and 2km respectively, for two modes of transport –<br>
+by walking and by private transport, we will be creating a total of 4 pairs of output polygon and<br>
+interpolation layers. We will only save the output polygons into our Project GeoPackage.<br>
+As these layers have many parameters that need to be kept to, the important inputs will be listed down<br>
+in the table below:</p>
+<p><img src="images/paste-8C9760C8.png" class="img-fluid"></p>
+<p><img src="images/paste-7973E74B.png" class="img-fluid"></p>
+<p>The following is a screenshot of how all 4 layers look like on our active QGIS window:</p>
+<p><img src="images/paste-4E323C2A.png" class="img-fluid"></p>
+<p>The third method we will use to find the affected residentials of the closure of schools will be by using<br>
+the fastest time method.<br>
+1. Under Processing Toolbox, search for QNEAT3<br>
+2. Select the Iso-Area as Polygons (from Layer)</p>
+<p><img src="images/paste-306A20D6.png" class="img-fluid"></p>
+<p>Since we are trying to find the fastest time of approximately 1km and 2km respectively, for two modes<br>
+of transport – by walking and by private transport, we will be creating a total of 4 pairs of output<br>
+polygon and interpolation layers. We will only save the output polygons into our Project GeoPackage.<br>
+As these layers have many parameters that need to be kept to, the important inputs will be listed down<br>
+in the table below:</p>
+<p><img src="images/paste-9597B8D2.png" class="img-fluid"></p>
+<p><img src="images/paste-62C71A51.png" class="img-fluid"></p>
+<p>The following is a screenshot of how all 4 layers look like on our active QGIS window:</p>
+<p><img src="images/paste-DAB8DDE5.png" class="img-fluid"></p>
+<ol start="2" type="i">
+<li>Average out SP &amp; FT<br>
+After we have created all 8 different layers via the shortest path and fastest time with QNEAT3, we can<br>
+calculate the number of affected residentials in each layer.<br>
+</li>
+</ol>
+<ol type="1">
+<li>Click on hex_residentials_centroids to activate the layer<br>
+</li>
+<li>Using the Select Features by Freehand tool, trace the shape of each output polygon layer that<br>
+corresponds to the area around each closed school to find the number of residential centroids<br>
+affected<br>
+After finding the number of affected centroids, we can manually input these values into the<br>
+closed_schools CSV file. The CSV file should look something like this:</li>
+</ol>
+<p><img src="images/paste-AE678E74.png" class="img-fluid"></p>
+<p>As these 2 methods are similar, we can average the two methods to obtain the average number of<br>
+residentials that have been affected.</p>
+<p><img src="images/paste-E4A39768.png" class="img-fluid"></p>
+<p>As these 2 methods are similar, we can average the two methods to obtain the average number of<br>
+residentials that have been affected.<br>
+From the 88 and 290 affected residential centroids obtain within the 1km and 2km buffer respectively,<br>
+we will first count the number of primary schools accessible via buffers, shortest path by walking and<br>
+shortest path by driving before and after merger. Afterwards, we will derive the percentage change.<br>
+For each residential centroid, let's create<br>
+1. A 1km buffer<br>
+2. A 2km buffer<br>
+3. A 1km shortest network path by walking<br>
+4. A 2km shortest network path by walking<br>
+5. A 1km shortest network path by driving<br>
+6. A 2km shortest network path by driving</p>
+<p><img src="images/paste-FBA4A08E.png" class="img-fluid"></p>
+</section>
+<section id="create-shortest-paths-for-affected-residentials" class="level5">
+<h5 class="anchored" data-anchor-id="create-shortest-paths-for-affected-residentials"><em>Create Shortest Paths for Affected Residentials</em></h5>
+<p>1. Under Processing Toolbox, search for network and select the built-in tool, Service area (from<br>
+layer). You will create 4 temporary pairs of Service area (line) layers and Convex hulls layers<br>
+each for 1km_affected and 2km_affected</p>
+<p><img src="images/paste-B3820F82.png" class="img-fluid"></p>
+<p>2. Enter the following under Parameters for each of the temporary service area layer</p>
+<p><img src="images/paste-CA847513.png" class="img-fluid"> <img src="images/paste-3146C658.png" class="img-fluid"></p>
+<p>Below is an example of how your temporary Service area (lines) layer will look like:</p>
+<p><img src="images/paste-FD77F515.png" class="img-fluid"> 3. After each temporary Service area (lines) layer is added to your Layers panel, search for convex<br>
+under Processing Toolbox and select Convex hull</p>
+<p><img src="images/paste-2181CDAA.png" class="img-fluid"> 4. Select Service (area) lines as your Input layer and click Run<br>
+5. Another temporary layer, Convex hulls, is created under Layers panel</p>
+<p><img src="images/paste-9A68116F.png" class="img-fluid"></p>
+<p>4. Select Service (area) lines as your Input layer and click Run<br>
+5. Another temporary layer, Convex hulls, is created under Layers panel<br>
+6. Save the above layer as 1kma_1kmshort_walking into your Project GeoPackage.<br>
+7. Remove both temporary layers, Service area (lines) and Convex hulls from your Layers panel<br>
+8. Do the same for another 7 times, using parameter inputs as shown in the above table</p>
+</section>
+<section id="section-1" class="level5">
+<h5 class="anchored" data-anchor-id="section-1"></h5>
+<p><em>Find and Calculate the Number of Primary Schools Accessible by Buffers (1km_affected)</em></p>
+<p>Under the Vector menu bar, select Analysis Tools -&gt; Count Points in Polygon. You will create two pairs of<br>
+primary school count, one (consisting of all and curr) for each buffer</p>
+<p><img src="images/paste-487E0564.png" class="img-fluid"> 1. Rename the temporary layer, Count, as<br>
+- all when your input for Points is all<br>
+- curr when your input for Points is curr<br>
+2. Open the Layer Properties window for 1km_affected<br>
+3. Click on Joins and then the green + icon<br>
+4. Enter the following inputs</p>
+<p><img src="images/paste-6375B0C2.png" class="img-fluid"> <img src="images/paste-2032F518.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>Notice that the attribute table of 1km_affected will have 2 new fields, curr_curr and all_all.<br>
+You will now create a new field, 1KM_BUFF_PERC_CHANGE<br>
+</li>
+<li>Open your field calculator tool and enter the following expression</li>
+</ol>
+<p><img src="images/paste-FC106C95.png" class="img-fluid"></p>
+<ol start="7" type="1">
+<li>Update the NULL values in your newly created field with the following expression</li>
+</ol>
+<p><img src="images/paste-92AEC9C5.png" class="img-fluid"></p>
+<ol start="8" type="1">
+<li>Remove curr and all from your Layers panel<br>
+</li>
+<li>Repeat the above steps to create a new field, 2KM_BUFF_PERC_CHANGE</li>
+</ol>
+</section>
+<section id="find-and-calculate-the-number-of-primary-schools-accessible-by-walking-the-shortest-1km_affected" class="level5">
+<h5 class="anchored" data-anchor-id="find-and-calculate-the-number-of-primary-schools-accessible-by-walking-the-shortest-1km_affected"><em>Find and Calculate the Number of Primary Schools Accessible by Walking the Shortest (1km_affected)</em></h5>
+<p>Under the Vector menu bar, select Analysis Tools -&gt; Count Points in Polygon. You will create two pairs of<br>
+primary school count, one (consisting of all and curr) for each walking polygon <img src="images/paste-D49896E7.png" class="img-fluid"></p>
+<p>With the steps above, create 1KM_SWALKING_PERC_CHANGE and 2KM_SWALKING_PERC_CHANGE</p>
+</section>
+<section id="find-and-calculate-the-number-of-primary-schools-accessible-by-drivingthe-shortest-1km_affected" class="level5">
+<h5 class="anchored" data-anchor-id="find-and-calculate-the-number-of-primary-schools-accessible-by-drivingthe-shortest-1km_affected"><em>Find and Calculate the Number of Primary Schools Accessible by Drivingthe Shortest (1km_affected)</em></h5>
+<p>Under the Vector menu bar, select Analysis Tools -&gt; Count Points in Polygon. You will create two pairs of<br>
+primary school count, one (consisting of all and curr) for each driving polygon <img src="images/paste-94A4B216.png" class="img-fluid"></p>
+<p>With the steps above, create 1KM_SDRIVING_PERC_CHANGE and 2KM_SDRIVING_PERC_CHANGE<br>
+At the end, the attribute table of 1km_affected should look like the following: <img src="images/paste-0F767433.png" class="img-fluid"></p>
+<p>Now that you have finished creating all 6 new fields, repeat all the steps from the above 3 sub-sections<br>
+for 2km_affected.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

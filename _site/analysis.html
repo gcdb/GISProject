@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>PriMERGEry - Analysis and Discussion</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">PriMERGEry</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./overview.html">Overview</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html">Proposal</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./methodology.html">Methodology</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./analysis.html" aria-current="page">Analysis &amp; Lesson Learnt</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./poster.html">Poster</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link active" data-scroll-target="#data-analysis">Data Analysis</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#lessons-learnt" id="toc-lessons-learnt" class="nav-link" data-scroll-target="#lessons-learnt">Lessons Learnt</a></li>
+  <li><a href="#future-works" id="toc-future-works" class="nav-link" data-scroll-target="#future-works">Future Works</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analysis and Discussion</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
+<section id="subzone-analysis-of-students-to-school-ratio" class="level5">
+<h5 class="anchored" data-anchor-id="subzone-analysis-of-students-to-school-ratio"><em>Subzone Analysis of Students to School Ratio</em></h5>
+<p><img src="images/paste-127B55CC.png" class="img-fluid"></p>
+<p>The number of primary schools are represented by red hue, and the number of primary school students<br>
+are represented by blue hues. Therefore, the redder hue on the final image indicates that there are<br>
+more schools in that particular subzone compared to the relative number of students in the subzone.<br>
+Vice versa, the bluer the hue, the more student to school in the subzone. The darker regions indicate<br>
+that there are a lot of schools as well as a lot of students in the subzone. Analysis also shows that the<br>
+Malcom subzone has a lot of schools but relatively a lot fewer student count.</p>
+<table class="table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Subzone with the most number of students</td>
+<td>Woodlands East (1150), Tampines East (1130)</td>
+</tr>
+<tr class="even">
+<td>Subzone with the most number of schools</td>
+<td>Tampines East (7), Yunnan (5), Woodlands East (5)</td>
+</tr>
+</tbody>
+</table>
+<p>According to Statista, the enrolment has been showing a downward trend since 2011 and only sees a<br>
+small spike in 2019.</p>
+<p><img src="images/paste-4E878357.png" class="img-fluid"> <img src="images/paste-D3F6E116.png" class="img-fluid"></p>
+<p>This data is in line with the data for declining birthrate since 2015 as shown below.</p>
+<p><img src="images/paste-CA6F60AF.png" class="img-fluid"></p>
+<p>In the table taken from Education Statistics Digest 2020, we can see the enrolment number and number<br>
+of classes with average class size for 2019.</p>
+<p><img src="images/paste-96C0ABC8.png" class="img-fluid"></p>
+<p>Therefore, with a downward trend of students in schools coupled with declining birth rate, it is<br>
+reasonable for schools to close/merge to provide quality education to the students.</p>
+</section>
+<section id="number-of-affected-residentials-due-to-merger" class="level5">
+<h5 class="anchored" data-anchor-id="number-of-affected-residentials-due-to-merger"><em>Number of Affected Residentials due to Merger</em></h5>
+<p>In order to clearly analyze the number of affected residentials due to the closure of the 7 primary<br>
+schools in 2019, the data that has been manually calculated from the data collection portion of this<br>
+study has been imported into a Python file so that the data will be more clearly represented. This<br>
+screenshot below shows a data frame of the affected residentials:</p>
+<p><img src="images/paste-119D9659.png" class="img-fluid"></p>
+<p>Since the buffer zone covers a greater area as compared to the output polygons created from QNEAT3,<br>
+there is a larger number of affected residentials represented by the buffer zone and is about 2 to 3 times<br>
+as large as the number of residentials represented by the output polygons.<br>
+When looking from the 1km proximity distance from the closed schools, the closure of schools could<br>
+affect up to 16 residential areas (taken from the closure of East Coast Primary School). When looking<br>
+from the 2km proximity distance from the closed schools, the closure of schools could affect up to 55<br>
+residential areas (taken from the closure of Balestier Hill Primary School). From just looking at the data<br>
+collected by using the buffer method, an average of 14 and 50 residential areas are affected within a<br>
+1km and 2km buffer respectively.<br>
+With 3 closures in the East, 3 closures in the Central and 1 closure in the North, we have taken a closer<br>
+look at the subzone analysis that we have previously done. In the Eastern region of Singapore nearer<br>
+towards the Tampines and Pasir Ris subzones, the proportion of schools to students in these areas are<br>
+one of the greatest as compared to the other subzones of Singapore. By closing 3 schools, this would<br>
+make sense to reduce the school count and balance the ratio of schools to students in the area. In the<br>
+Central region and especially where East Coast Primary School and Macpherson Primary School were<br>
+once located, the subzones also mostly show a larger proportion of schools to students, which does<br>
+correspond to the government's decision to close these 2 schools. However, Balestier Hill Primary<br>
+School (located centrally) and Da Qiao Primary School (located in the North) have subzones where the<br>
+ratio of schools to students are roughly equal as compared to all the subzones in Singapore. By using the<br>
+same deduction, the closure of these 2 schools would result in a higher student to school ratio, equating<br>
+to a lack of access to schools in these subzones due to high enrolment rates (assuming students apply<br>
+for schools near their residential areas).</p>
+</section>
+<section id="number-of-schools-accessible-after-the-merger" class="level5">
+<h5 class="anchored" data-anchor-id="number-of-schools-accessible-after-the-merger"><em>Number of Schools Accessible After the Merger</em></h5>
+<p>We also wanted to quantify the impact of school closures for each residential centroid, specifically<br>
+looking at the change in the number of primary schools accessible based on a transport mode. As the<br>
+top 2 transport modes of primary school students were by walking and driving<br>
+(https://www.singstat.gov.sg/find-data/search-by-theme/population/mode-of-transport/visualising-<br>
+data/mode-of-transport-dashboard), we looked at both. We looked at the percentage change<br>
+(reduction), instead of the absolute difference as it gives a more accurate representation of how<br>
+residents are affected.<br>
+Of the 88 affected residentials that are within 1km proximity of the closed primary schools, we<br>
+discovered that 3/5 of them still have the same number of primary schools accessible, by walking, within<br>
+1km from where they live (ie a change of 0%). A tenth of them had to walk beyond 1km but not more<br>
+than a driving distance of 2km. An interesting note is that due to the short distance travelled, the change<br>
+in accessibility did not vary much between the two different transport modes. One obvious difference<br>
+between walking and driving is that the residentials who walked had a greater proportion of more than<br>
+50% reduction in accessibility. This means that while there is some disruption to the residents'<br>
+accessibility, the impact is not too great.</p>
+<p><img src="images/paste-C76071B4.png" class="img-fluid"></p>
+<p>Of the 288 affected residentials that are within 2km proximity of the closed primary schools, there is<br>
+undoubtedly a larger proportion of them being unaffected by the closures as compared to the<br>
+residentials above. The only proportion that remained unchanged is when the travelling distance is 1km.</p>
+<p><img src="images/paste-5F13DA00.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<section id="calculation-of-affected-residentials" class="level5">
+<h5 class="anchored" data-anchor-id="calculation-of-affected-residentials"><em>Calculation of Affected Residentials</em></h5>
+<p>The first limitation of this method is that due to human error of tracing the polygon, the number of<br>
+residential centroids may differ slightly from each user to another user. In order to reduce this error, we<br>
+can zoom in to the polygon as close as we can to trace the shape as accurately as possible. The second<br>
+limitation is that the distance between two schools may be so close that the polygons may intersect one<br>
+another, which would lead to inaccurate results. In order to reduce this limitation, we can try to find an<br>
+equal distance between both schools and split the polygon into half.</p>
+</section>
+<section id="use-of-centroids-of-hexagonal-grids-to-represent-affected-residentials" class="level5">
+<h5 class="anchored" data-anchor-id="use-of-centroids-of-hexagonal-grids-to-represent-affected-residentials"><em>Use of (Centroids of) Hexagonal Grids to Represent Affected Residentials</em></h5>
+<p>By using hexagonal grids to represent groups of residential landuse areas on the mainland layer, it<br>
+creates an inaccuracy of the number of residential buildings that have truly been affected by the closure<br>
+of the schools. In addition, even though some parts of the grid may be covered by the buffer or output<br>
+polygons, the hexagonal grid will not be selected if the centroid does not overlap. Therefore, the size of<br>
+the hexagonal grid used is a limitation that we had to consider as assigning a centroid to each residential<br>
+landuse area/building would have been computationally too intensive.</p>
+</section>
+<section id="method-of-finding-shortest-path-and-fastest-time" class="level5">
+<h5 class="anchored" data-anchor-id="method-of-finding-shortest-path-and-fastest-time"><em>Method of finding Shortest Path and Fastest Time</em></h5>
+<p>A limitation of this method that we encountered was that some of the output polygons that we<br>
+produced were abnormal in terms of how it was formed on the map. This resulted in inaccurate data<br>
+that was produced for the number of affected residentials. This meant that the data had to be represented by NA. A possible alternative would be to use the Distance Interval method, but it is also<br>
+computationally intensive.</p>
+</section>
+</section>
+<section id="lessons-learnt" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-learnt">Lessons Learnt</h2>
+<p>Tristan's:<br>
+• Geospatial Analysis is an essential tool for human visualization of the number of schools that are<br>
+in someone's proximity area, and how fortunate Singaporeans are that their children have<br>
+relatively easy access via walking or private transport to schools<br>
+• Most subzones in Singapore have a higher proportion of schools to students, which also show<br>
+how students currently will most likely be able to enroll into a school in their residential area.<br>
+This also shows why the government may be closing some schools in order to ensure that the<br>
+ratio of schools to students is not too large<br>
+• In order to maintain the equity of enrolment and registration of P1 students into schools,<br>
+residentials that have no or limited access to schools due to the closure of schools within a<br>
+certain proximity distance should be given priority in terms of enrolment and registration.</p>
+<p><br>
+Mahn Yin's:<br>
+• Having done the analysis on the subzone and primary school made me appreciate the<br>
+meticulous planning done by the relevant parties even more<br>
+• Accessibility to schools should not be taken for granted – every child in Singapore is guaranteed<br>
+access to education, yet some countries struggle to provide education for even a fraction of<br>
+their children.</p>
+<p><br>
+Jia Xuan's:<br>
+• Accessibility to schools can be measured in different metrics. My project group decided to focus<br>
+on one metric, which is the number of points (schools/residential centroids). Despite having only<br>
+one metric, we approached itfromn two different perspectives for a deeper insight into our<br>
+chosen subtheme. This reminded me of how there will always be different perspectives to a<br>
+single subject, and we should never stick to just one<br>
+• There would always be unfairness in any decision, as shown in how some residentials were<br>
+affected more by the school closures than others. Tradeoffs will also be incurred, but they can<br>
+be balanced out</p>
+</section>
+<section id="future-works" class="level2">
+<h2 class="anchored" data-anchor-id="future-works">Future Works</h2>
+<ul>
+<li><p>With Singapore expanding her bus and train networks, our work can be extended to include an<br>
+analysis of students' accessibility via public transport</p></li>
+<li><p>With past and future closures/mergers before and beyond 2019 respectively, future work can be<br>
+done to identify possible patterns as to why closures and mergers happen in designated<br>
+subzone areas around Singapore</p></li>
+<li><p>Looking at mergers and closures of other educational institutions such as secondary schools and<br>
+junior colleges, and analyze if the extent of decreased accessibility is greater or lesser for these<br>
+institutions could be an extension of our current work</p></li>
+<li><p>Able to explore the correlation between different demographic groups and their accessibility to<br>
+schools due to mergers and closures</p></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

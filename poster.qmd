@@ -1,0 +1,5 @@
+---
+title: "Poster"
+---
+
+![](images/Poster%20Final.png){fig-align="center"}

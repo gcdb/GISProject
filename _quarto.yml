@@ -2,22 +2,19 @@ project:
   type: website
 
 website:
-  title: "GISProject"
+  title: "PriMERGEry"
   navbar:
     left:
-      - href: intro.html
-        text: Introduction
+      - href: overview.html
+        text: Overview
+      - href: proposal.html
+        text: Proposal
       - href: methodology.html
         text: Methodology
       - href: analysis.html
-        text: Analysis
-      - href: finding.html
-        text: Results & Discussion 
-    right:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
+        text: Analysis & Lesson Learnt
+      - href: poster.html
+        text: Poster
 
 format:
   html:

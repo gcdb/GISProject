@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GISProject - PriMERGEry</title>
+<title>PriMERGEry - Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">GISProject</span>
+    <span class="navbar-title">PriMERGEry</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -80,24 +80,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./intro.html" aria-current="page">Introduction</a>
+    <a class="nav-link" href="./overview.html">Overview</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./proposal.html">Proposal</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./methodology.html">Methodology</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./analysis.html">Analysis</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./finding.html">Results &amp; Discussion</a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
+    <a class="nav-link" href="./analysis.html">Analysis &amp; Lesson Learnt</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -115,8 +107,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#project-tasks" id="toc-project-tasks" class="nav-link" data-scroll-target="#project-tasks">Project Tasks</a></li>
-  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#key-findings-from-data-analysis" id="toc-key-findings-from-data-analysis" class="nav-link" data-scroll-target="#key-findings-from-data-analysis">Key Findings from Data Analysis</a></li>
+  <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline">Project Timeline</a></li>
   </ul>
 </nav>
     </div>
@@ -125,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">PriMERGEry</h1>
+<h1 class="title">Overview</h1>
 </div>
 
 
@@ -141,20 +136,45 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This is</p>
+<p>This section provides an overview of the Project - PriMERGEry.</p>
 </section>
-<section id="project-tasks" class="level2">
-<h2 class="anchored" data-anchor-id="project-tasks">Project Tasks</h2>
-<p>The project tasks are as follows:</p>
-<ul>
-<li><p>to compile the necessary data</p></li>
-<li><p>to derive new data sets</p></li>
-</ul>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>With the great motivation to add value to MOE’s valuation of the closures and mergers of primary schools, we employed geospatial analytics to find out the impact these actions have on the extent of accessibility. We focused specifically on the 2019 merger of 7 pairs of primary schools, leading to the closure of 7 schools.</p>
 </section>
-<section id="the-data" class="level2">
-<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
-<p>The following data sets will be used:</p>
-<p>2019</p>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+<p>• To better understand whether the closures of 7 schools have impacted the accessibility of certain students living in nearby residential areas.</p>
+<p>• Discover the extent of the decreased accessibility, given the assumption that the closure of a school reduces a student’s opportunity to enrol into a primary school.</p>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>1) Data Preparation that includes geocoding all primary schools to produce a closed school layer and current school layer, creating walking and private driving networks, and creating hexagonal grids to represent groups of residential landuse areas in Singapore.</p>
+<ol start="2" type="1">
+<li>Data Cleaning that first finds the number of affected residentials through creating Buffers and Iso-Areas as Polygons around the closed schools, and second calculate the number of accessible primary schools by buffers, walking and driving from residential areas.</li>
+</ol>
+</section>
+<section id="key-findings-from-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings-from-data-analysis">Key Findings from Data Analysis</h2>
+<p><strong>Subzone Analysis</strong></p>
+<p>• Subzones with large student count have sufficient schools for the students</p>
+<p>• Some subzones have very little student count but have more schools than other regions with relatively more students</p>
+<p><strong>Number of Affected Residentials</strong></p>
+<p>• Number of affected residentials represented by buffer about 2 to 3 times the number of affected residentials represented by the output polygons created by QNEAT3</p>
+<p>• Average of 14 and 50 residential areas are affected within a 1km and 2km buffer respectively</p>
+<p>• Closures have mostly occurred in subzones with a higher school to student ratio (5 out of 7 Schools)</p>
+<p><strong>Extent of Accessibility after Merger</strong></p>
+<p>• While the majority (ie more than half) of residentials remain unaffected by the merger, there would generally always be a greater proportion of residentials who walked, than drove, that have more than a 50% reduction in accessibility</p>
+<p>Travelling distance was a factor that did not affect the proportion much, no matter the transport mode.</p>
+</section>
+<section id="project-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="project-timeline">Project Timeline</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GIS_T8_Project_Gantt_Chart1024_1.png" class="img-fluid figure-img" alt="Project Gantt Chart"></p>
+<p></p><figcaption class="figure-caption">Project Gantt Chart</figcaption><p></p>
+</figure>
+</div>
 
 
 </section>

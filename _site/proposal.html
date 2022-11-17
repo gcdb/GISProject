@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PriMERGEry</title>
+<title>PriMERGEry – proposal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./overview.html">Overview</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proposal.html">Proposal</a>
+    <a class="nav-link active" href="./proposal.html" aria-current="page">Proposal</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./methodology.html">Methodology</a>
@@ -109,39 +109,101 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#heres-the-link-to-our-project-proposal." id="toc-heres-the-link-to-our-project-proposal." class="nav-link" data-scroll-target="#heres-the-link-to-our-project-proposal.">Here’s the link to our project proposal.</a></li>
+  <li><a href="#project-proposal" id="toc-project-proposal" class="nav-link active" data-scroll-target="#project-proposal">Project Proposal</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background"><strong>Background</strong></a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation"><strong>Motivation</strong></a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data Collection</a></li>
+  <li><a href="#scope-of-work" id="toc-scope-of-work" class="nav-link" data-scroll-target="#scope-of-work">Scope of Work</a></li>
+  <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline">Project Timeline</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">PriMERGEry</h1>
+
+
+<section id="project-proposal" class="level1">
+<h1>Project Proposal</h1>
+<p>Here’s the <a href="https://docs.google.com/document/d/1l8eFumflQ1cb8HYLWka9ujbsxcPFMzgQ/edit?usp=sharing&amp;ouid=115568116821271386627&amp;rtpof=true&amp;sd=true">link</a> to our project proposal.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background"><strong>Background</strong></h2>
+<p>With 183 primary schools in Singapore (as of 2019), parents of primary school students may require to ballot during the Primary 1 (P1) Registration Exercise to secure a place in a preferred school. One main criteria that affects a student’s priority of admission is his/her residential’s distance away from the school of choice. The Home-School Distance category is an important factor that secures a place for the child in the primary school, and thus an available school within the acceptable distance of the family’s residential address in turn affects the accessibility to schools in the acceptable area.</p>
+<p>With recent mergers and closures of primary schools in the past few years, the government attributed it to shrinking school cohorts and declining birth rates (Statista, 2021). In order to visualize the negative effects of closures on the accessibility of schools for some students living in certain residential areas and subzones, using a geographic system would be helpful. As such, our team from SMU began working on this project to conduct geospatial analytics to analyze the possible decreased accessibility for certain families who have children studying in primary schools.</p>
+</section>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation"><strong>Motivation</strong></h2>
+<p>In view of this GIS Project, we were excited and curious to apply our newly achieved knowledge and skills in geospatial analytics to possibly add value to the government and the Ministry of Education (MOE) in their valuation of any possible negative and positive effects of these closures and mergers of primary schools.</p>
+<p>Our team focused specifically on the 2019 merger of 7 pairs of primary schools, leading to the closure of these 7 campuses. We chose this year to analyze because it is the latest fully completed process as compared to ongoing ones now. We also chose to focus on primary schools because of the higher emphasis placed on the priority on enrolment due to the proximity distance between one’s residential address and school of choice.</p>
+</section>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+<p>Our main objective of carrying out this project is to conduct a geospatial analysis of the primary schools in Singapore to better understand whether the closures of 7 schools have impacted the accessibility of certain students living in nearby residential areas. Our primary objective would be to discover the extent of the decreased accessibility, given the assumption that the closure of a school reduces a student’s opportunity to enrol into a primary school. Our network analysis will take on three different approaches, finding the buffering distance, finding the shortest network distance, and finding the fastest network distance. To analyze this further, we will consider the top transport modes that primary school students would use to get to school; by foot and private transport. Based on our results, we will be able to derive the possible extent of these closures from the perspectives of the public.</p>
+</section>
+<section id="data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection">Data Collection</h2>
+<p>For the purpose of this project, the following data sources have been used.</p>
+<table class="table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 19%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">File Name</th>
+<th style="text-align: center;">File Format</th>
+<th style="text-align: center;">Link to Data Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020</td>
+<td style="text-align: center;">csv</td>
+<td style="text-align: center;">https://www.singstat.gov.sg/-/media/files/find_data/population/statistical_tables/respopagesex2011to2020.ashx</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">master-plan-2019-subzone-boundary-no-sea</td>
+<td style="text-align: center;">kml and geojson</td>
+<td style="text-align: center;">https://data.gov.sg/dataset/master-plan-2019-subzone-boundary-no-sea</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">malaysia-singapore-brunei-latest-free</td>
+<td style="text-align: center;">shapefile</td>
+<td style="text-align: center;">https://download.geofabrik.de/asia/malaysia-singapore-brunei.html</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">school-directory-and-information</td>
+<td style="text-align: center;">csv</td>
+<td style="text-align: center;">https://data.gov.sg/dataset/school-directory-and-information</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="scope-of-work" class="level2">
+<h2 class="anchored" data-anchor-id="scope-of-work">Scope of Work</h2>
+<p>The project will comprise of, but not limited to the following steps:</p>
+<p>• Selection of project area in Singapore, the year of the project area is determined to be 2019</p>
+<p>• Data collection, extraction, integration, transformation, and wrangling</p>
+<p>• Designing and building GIS model</p>
+<p>• Preparing report of project</p>
+<p>• Performing suitable geospatial analysis by using GIS as well as other techniques</p>
+<p>• Preparing poster and project webpage</p>
+<p>• Recording of minute meetings for every project meeting</p>
+</section>
+<section id="project-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="project-timeline">Project Timeline</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GIS_T8_Project_Gantt_Chart1024_1.png" class="img-fluid figure-img" alt="Project Gantt Chart"></p>
+</figure>
 </div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-    
-  </div>
-  
-
-</header>
-
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>With 183 primary schools in Singapore (as of 2019), parents of primary school students may require to ballot during the Primary 1 (P1) Registration Exercise to secure a place in a preferred school. One main criteria that affects a student’s priority of admission is his/her residential’s distance away from the school of choice. The Home-School Distance category is an important factor that secures a place for the child in the primary school, and thus an available school within the acceptable distance of the family’s residential address in turn affects the accessibility to schools in the acceptable area.</p>
-<p>With recent mergers and closures of primary schools in the past few years, the government has mentioned about the due to shrinking school cohorts and declining birth rates. In order to visualize the negative effects of closures on the accessibility of schools for some students living in certain residential areas and subzones, using a geographic system would be helpful. As such, our team from SMU began working on this project to conduct geospatial analytics to analyze the possible decreased accessibility for certain families who have children studying in primary schools.</p>
 </section>
-<section id="heres-the-link-to-our-project-proposal." class="level2">
-<h2 class="anchored" data-anchor-id="heres-the-link-to-our-project-proposal.">Here’s the <a href="https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69wssQCK/edit?usp=sharing&amp;ouid=115568116821271386627&amp;rtpof=true&amp;sd=true">link</a> to our project proposal.</h2>
-
-
 </section>
 
 </main> <!-- /main -->

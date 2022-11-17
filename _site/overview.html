@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PriMERGEry</title>
+<title>PriMERGEry - Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./overview.html">Overview</a>
+    <a class="nav-link active" href="./overview.html" aria-current="page">Overview</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./proposal.html">Proposal</a>
@@ -109,8 +109,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#heres-the-link-to-our-project-proposal." id="toc-heres-the-link-to-our-project-proposal." class="nav-link" data-scroll-target="#heres-the-link-to-our-project-proposal.">Here’s the link to our project proposal.</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#key-findings-from-data-analysis" id="toc-key-findings-from-data-analysis" class="nav-link" data-scroll-target="#key-findings-from-data-analysis">Key Findings from Data Analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -119,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">PriMERGEry</h1>
+<h1 class="title">Overview</h1>
 </div>
 
 
@@ -133,13 +135,35 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>With 183 primary schools in Singapore (as of 2019), parents of primary school students may require to ballot during the Primary 1 (P1) Registration Exercise to secure a place in a preferred school. One main criteria that affects a student’s priority of admission is his/her residential’s distance away from the school of choice. The Home-School Distance category is an important factor that secures a place for the child in the primary school, and thus an available school within the acceptable distance of the family’s residential address in turn affects the accessibility to schools in the acceptable area.</p>
-<p>With recent mergers and closures of primary schools in the past few years, the government has mentioned about the due to shrinking school cohorts and declining birth rates. In order to visualize the negative effects of closures on the accessibility of schools for some students living in certain residential areas and subzones, using a geographic system would be helpful. As such, our team from SMU began working on this project to conduct geospatial analytics to analyze the possible decreased accessibility for certain families who have children studying in primary schools.</p>
+<p>This section provides an overview of the Project - PriMERGEry.</p>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>With the great motivation to add value to MOE’s valuation of the closures and mergers of primary schools, we employed geospatial analytics to find out the impact these actions have on the extent of accessibility. We focused specifically on the 2019 merger of 7 pairs of primary schools, leading to the closure of 7 schools.</p>
 </section>
-<section id="heres-the-link-to-our-project-proposal." class="level2">
-<h2 class="anchored" data-anchor-id="heres-the-link-to-our-project-proposal.">Here’s the <a href="https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69wssQCK/edit?usp=sharing&amp;ouid=115568116821271386627&amp;rtpof=true&amp;sd=true">link</a> to our project proposal.</h2>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+<p>• To better understand whether the closures of 7 schools have impacted the accessibility of certain students living in nearby residential areas.</p>
+<p>• Discover the extent of the decreased accessibility, given the assumption that the closure of a school reduces a student’s opportunity to enrol into a primary school.</p>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>1) Data Preparation that includes geocoding all primary schools to produce a closed school layer and current school layer, creating walking and private driving networks, and creating hexagonal grids to represent groups of residential landuse areas in Singapore.</p>
+<ol start="2" type="1">
+<li>Data Cleaning that first finds the number of affected residentials through creating Buffers and Iso-Areas as Polygons around the closed schools, and second calculate the number of accessible primary schools by buffers, walking and driving from residential areas.</li>
+</ol>
+</section>
+<section id="key-findings-from-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings-from-data-analysis">Key Findings from Data Analysis</h2>
+<p><strong>Subzone Analysis</strong></p>
+<p>• Subzones with large student count have sufficient schools for the students</p>
+<p>• Some subzones have very little student count but have more schools than other regions with relatively more students</p>
+<p><strong>Number of Affected Residentials</strong></p>
+<p>• Number of affected residentials represented by buffer about 2 to 3 times the number of affected residentials represented by the output polygons created by QNEAT3</p>
+<p>• Average of 14 and 50 residential areas are affected within a 1km and 2km buffer respectively</p>
+<p>• Closures have mostly occurred in subzones with a higher school to student ratio (5 out of 7 Schools)</p>
+<p><strong>Extent of Accessibility after Merger</strong></p>
+<p>• While the majority (ie more than half) of residentials remain unaffected by the merger, there would generally always be a greater proportion of residentials who walked, than drove, that have more than a 50% reduction in accessibility</p>
+<p>Travelling distance was a factor that did not affect the proportion much, no matter the transport mode.</p>
 
 
 </section>

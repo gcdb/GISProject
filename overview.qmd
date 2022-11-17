@@ -1,0 +1,44 @@
+---
+title: "Overview"
+editor: visual
+---
+
+This section provides an overview of the Project - PriMERGEry.
+
+## Motivation
+
+With the great motivation to add value to MOE's valuation of the closures and mergers of primary schools, we employed geospatial analytics to find out the impact these actions have on the extent of accessibility. We focused specifically on the 2019 merger of 7 pairs of primary schools, leading to the closure of 7 schools.
+
+## Objective
+
+• To better understand whether the closures of 7 schools have impacted the accessibility of certain students living in nearby residential areas.
+
+• Discover the extent of the decreased accessibility, given the assumption that the closure of a school reduces a student's opportunity to enrol into a primary school.
+
+## Methodology
+
+1\) Data Preparation that includes geocoding all primary schools to produce a closed school layer and current school layer, creating walking and private driving networks, and creating hexagonal grids to represent groups of residential landuse areas in Singapore.
+
+2) Data Cleaning that first finds the number of affected residentials through creating Buffers and Iso-Areas as Polygons around the closed schools, and second calculate the number of accessible primary schools by buffers, walking and driving from residential areas.
+
+## Key Findings from Data Analysis
+
+**Subzone Analysis**
+
+• Subzones with large student count have sufficient schools for the students
+
+• Some subzones have very little student count but have more schools than other regions with relatively more students
+
+**Number of Affected Residentials**
+
+• Number of affected residentials represented by buffer about 2 to 3 times the number of affected residentials represented by the output polygons created by QNEAT3
+
+• Average of 14 and 50 residential areas are affected within a 1km and 2km buffer respectively
+
+• Closures have mostly occurred in subzones with a higher school to student ratio (5 out of 7 Schools)
+
+**Extent of Accessibility after Merger**
+
+• While the majority (ie more than half) of residentials remain unaffected by the merger, there would generally always be a greater proportion of residentials who walked, than drove, that have more than a 50% reduction in accessibility
+
+Travelling distance was a factor that did not affect the proportion much, no matter the transport mode.
