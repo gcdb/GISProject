@@ -5,23 +5,23 @@ editor: visual
 
 This section provides an overview of the Project - PriMERGEry.
 
-## Motivation
+## **Motivation**
 
 With the great motivation to add value to MOE's valuation of the closures and mergers of primary schools, we employed geospatial analytics to find out the impact these actions have on the extent of accessibility. We focused specifically on the 2019 merger of 7 pairs of primary schools, leading to the closure of 7 schools.
 
-## Objective
+## **Objective**
 
 • To better understand whether the closures of 7 schools have impacted the accessibility of certain students living in nearby residential areas.
 
 • Discover the extent of the decreased accessibility, given the assumption that the closure of a school reduces a student's opportunity to enrol into a primary school.
 
-## Methodology
+## **Methodology**
 
 1.  Data Preparation that includes geocoding all primary schools to produce a closed school layer and current school layer, creating walking and private driving networks, and creating hexagonal grids to represent groups of residential landuse areas in Singapore.
 
 2.  Data Cleaning that first finds the number of affected residentials through creating Buffers and Iso-Areas as Polygons around the closed schools, and second calculate the number of accessible primary schools by buffers, walking and driving from residential areas.
 
-## Key Findings from Data Analysis
+## **Key Findings from Data Analysis**
 
 **Subzone Analysis**
 

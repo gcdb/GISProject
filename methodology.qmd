@@ -10,7 +10,7 @@ Here's the [link](https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69
 Before we begin, ensure that your QGIS active window has the correct projected coordinates system:\
 EPSG: 3414. For all subsequent layers used, do save them in 3414 before processing.
 
-##### *Creating mainland layer of Singapore (excluding secondary islands)*
+#### *Creating mainland layer of Singapore (excluding secondary islands)*
 
 1\. Under your Browser panel, look for master-plan-2019-subzone-boundary-no-sea-kml.kml and\
 add URA_MP19_SUBZONE_NO_SEA_PL to your Layers panel. The layer should look like this:
@@ -26,7 +26,7 @@ add URA_MP19_SUBZONE_NO_SEA_PL to your Layers panel. The layer should look like 
 5.  Remove the raw data layer, URA_MP19_SUBZONE_NO_SEA_PL, that was downloaded as we\
     have our new mainland layer
 
-##### *Creating Primary School Students by Subzone layer*
+#### *Creating Primary School Students by Subzone layer*
 
 1\. Load respopagesex2011to2020 layer onto Layers panel\
 2. Under Database menu bar, select DB Manager and execute the following query:
@@ -72,63 +72,69 @@ Mode: Natural breaks (Jenks)\
 
 ![](images/paste-D9D68D38.png)
 
-##### *Creating all_primary_schools layer*
+#### *Creating all_primary_schools layer*
 
 With the current school-directory-and-information.csv file, the 7 closed schools have been removed.\
 We need to manually add their school name, address, and postal code into the CSV file. We can find\
 these on Google.\
 For us to geocode our school points onto our mainland layer more accurately, we need to modify\
 school-directory-and-information.csv to include the x and y coordinates. We can use SLA OneMap API\
-to help us. Read the code chunks below into your RStudio environment. Enter the lines in blue into your\
-console.
+to help us. Read the code chunks below into your RStudio environment. Enter the lines in blue into your console.
 
 ![](images/paste-5F1657C4.png)
 
 ![](images/paste-C5961FD8.png)
 
-Now that we have more complete csv file, found.csv, we can add it in our QGIS as a point layer\
-1. Under the Layer menu bar, select Add Layer -\> Add Delimited Text Layer\
-2. Select the found.csv that you've just created and fill up the rest accordingly. Ensure that your\
-Geometry CRS is in 3414.
+1.  Now that we have more complete csv file, found.csv, we can add it in our QGIS as a point layer\
+    Under the Layer menu bar, select Add Layer -\> Add Delimited Text Layer
+
+2.  Select the found.csv that you've just created and fill up the rest accordingly. Ensure that your\
+    Geometry CRS is in 3414.
 
 ![](images/paste-FEBB84F3.png)
 
 3.  A new layer, found, will be added to your Layers panel. Save the layer into your Project\
-    Geopackage as geocoded_schools\
+    Geopackage as geocoded_schools
 4.  Open the attribute table of geocoded_schools. Use Select by Expression tool to filter only the\
     primary schools. You should have 194 selected features, with 3 rows having NULL for column\
     results.
 
-![](images/paste-56B65526.png)\
-5. Save Selected Features As all_primary_schools into your Project GeoPackage 6. Open the attribute table of all_primary_schools\
-7. Under the school_name field, look for MACPHERSON PRIMARY SCHOOL\
-8. Enable the Toggle Editing tool and delete away one of the duplicated row
+![](images/paste-56B65526.png)
+
+\
+5. Save Selected Features As all_primary_schools into your Project GeoPackage
+
+6.  Open the attribute table of all_primary_schools
+
+\
+Under the school_name field, look for MACPHERSON PRIMARY SCHOOL
+
+\
+Enable the Toggle Editing tool and delete away one of the duplicated row
 
 ![](images/paste-FDB41B57.png)
 
 9.  Disable the Toggle Editing tool to save the changes made
 
-##### *Creating closed_primary_schools layer*
+#### *Creating closed_primary_schools layer*
 
 From the attribute table of all_primary_schools, select the 7 closed primary schools (Balestier Hill\
 Primary School, Coral Primary School, Da Qiao Primary School, East Coast Primary School, East View\
-Primary School, Loyang Primary School, and Macpherson Primary School) that have already been added\
-in. This can be done quicker by filtering the school_name field.\
+Primary School, Loyang Primary School, and Macpherson Primary School) that have already been added in. This can be done quicker by filtering the school_name field.\
 After the 7 closed schools have been selected, we can save the Selected Features into the Project\
 GeoPackage and name the new layer as closed_primary_schools.
 
 ![](images/paste-B13505D3.png)
 
-##### *Creating current_primary_schools layer*
+#### *Creating current_primary_schools layer*
 
-From the attribute table of all_primary_schools, we can click on the Invert Feature Selection button that\
-would select the other 183 primary schools.\
+From the attribute table of all_primary_schools, we can click on the Invert Feature Selection button that would select the other 183 primary schools.\
 After the 183 schools have been selected, we can Save Selected Features As current_primary_schools\
 into the Project GeoPackage
 
 ![](images/paste-11F94EB0.png)
 
-##### *Creating Choropleth Map of Schools in Each Subzone*
+#### *Creating Choropleth Map of Schools in Each Subzone*
 
 1\. Under Vector menu bar, select Analysis Tools -\> Count Point in Polygon\
 2. Enter the following inputs\
@@ -149,7 +155,7 @@ into the Project GeoPackage
 
 ![](images/paste-AB21F405.png)
 
-##### *Creating walking layer*
+#### *Creating walking layer*
 
 1\. Load gis_osm_roads_free_1.shp onto your Layers panel\
 2. Save it in 3414 projected system as roads_3414 into your Project GeoPackage\
@@ -160,14 +166,14 @@ into the Project GeoPackage
 
 ![](images/paste-A5629B95.png) 7. Save Selected Features As walking into your Project GeoPackage
 
-##### *Creating privatedriving layer*
+#### *Creating privatedriving layer*
 
 1\. Open the attribute table of all_roads\
 2. Use Select Features by Expression tool and enter the following
 
 ![](images/paste-98BB29A7.png) 3. Save Selected Features As privatedriving into your Project GeoPackage
 
-##### *Creating hex_residentials and hex_residentials_centroids layer*
+#### *Creating hex_residentials and hex_residentials_centroids layer*
 
 1\. Load gis_osm_landuse_a\_free_1.shp onto Layers panel\
 2. Save it in 3414 projected system as landuse_3414 into your Project GeoPackage\
@@ -179,14 +185,19 @@ into the Project GeoPackage
 7. Under the Vector menu bar, select Research Tools -\> Create Grid. Fill up the following\
 - For Grid extent, select mainland_residential_landuse
 
-![](images/paste-C6A9A283.png) 8. A temporary layer, Grid, appears under Layers panel\
+![](images/paste-C6A9A283.png)
+
+8\. A temporary layer, Grid, appears under Layers panel\
 9. Use Select by Location tool to select all the hexagons in the temporary layer, Grid, that intersect\
 with mainland_residential_landuse
 
 ![](images/paste-16D45A8F.png)
 
-10\. Save Select Features As hex_residentials into your Project GeoPackage\
-11. Remove temporary layer, Grid from Layers panel 12. Under the Vector menu bar, select Geometry Tools -\> Centroids
+10\. Save Select Features As hex_residentials into your Project GeoPackage
+
+11\. Remove temporary layer, Grid from Layers panel
+
+12\. Under the Vector menu bar, select Geometry Tools -\> Centroids
 
 ![](images/paste-AB93002B.png)\
 13. Save temporary layer, Centroids, as hex_residentials_centroids into your Project GeoPackage\
@@ -197,7 +208,7 @@ window would look like if the centroids are successfully created
 
 ## **Data Cleaning**
 
-##### *Find the Relative Student to School Ratio in Subzones*
+#### *Find the Relative Student to School Ratio in Subzones*
 
 From the 2 choropleth maps of students (in blue) and schools (in red) distribution in each subzone, we\
 will create print layouts for each and export them as JPG files.\
@@ -206,18 +217,15 @@ each other and change the layer blend mode to multiply. The resulting image shou
 
 ![](images/paste-DABB54FB.png)
 
-##### *Find the Number of Affected Residentials*
+#### *Find the Number of Affected Residentials*
 
-a\. Buffer The first method we will use to find the affected residentials of the closure of schools will be by using\
-the buffering method.\
+a\. Buffer
+
+The first method we will use to find the affected residentials of the closure of schools will be by using the buffering method.\
 1. Under the Vector menu bar, select Geoprocessing Tools -\> Buffer\
 2. Enter the following inputs
 
 ![](images/paste-CAFA6A41.png)![](images/paste-58B2F07A.png)
-
-3.  2 temporary Buffered layers have been added to your Layers panel\
-4.  Export these layers into the Project GeoPackage and name the new layers as closed_1kmb and\
-    closed_2kmb respectively
 
 ![](images/paste-5B52C0C1.png)
 
@@ -233,14 +241,14 @@ the buffering method.\
 \
 b. QNEAT3\
 i. Shortest Path\
-The second method we will use to find the affected residentials of the closure of schools will be by using\
-the shortest path method 1. Under Processing Toolbox, search for QNEAT3\
+The second method we will use to find the affected residentials of the closure of schools will be by using the shortest path method
+
+1\. Under Processing Toolbox, search for QNEAT3\
 2. Select the Iso-Area as Polygons (from Layer)
 
 ![](images/paste-90C45CBB.png)
 
-Since we are trying to find the shortest path of 1km and 2km respectively, for two modes of transport --\
-by walking and by private transport, we will be creating a total of 4 pairs of output polygon and\
+Since we are trying to find the shortest path of 1km and 2km respectively, for two modes of transport -- by walking and by private transport, we will be creating a total of 4 pairs of output polygon and\
 interpolation layers. We will only save the output polygons into our Project GeoPackage.\
 As these layers have many parameters that need to be kept to, the important inputs will be listed down\
 in the table below:
@@ -275,15 +283,15 @@ The following is a screenshot of how all 4 layers look like on our active QGIS w
 ![](images/paste-DAB8DDE5.png)
 
 ii. Average out SP & FT\
-    After we have created all 8 different layers via the shortest path and fastest time with QNEAT3, we can\
-    calculate the number of affected residentials in each layer.\
+    After we have created all 8 different layers via the shortest path and fastest time with QNEAT3, we can calculate the number of affected residentials in each layer.
 
+```{=html}
 <!-- -->
-
+```
 1.  Click on hex_residentials_centroids to activate the layer\
 2.  Using the Select Features by Freehand tool, trace the shape of each output polygon layer that\
     corresponds to the area around each closed school to find the number of residential centroids\
-    affected\
+    affected.\
     After finding the number of affected centroids, we can manually input these values into the\
     closed_schools CSV file. The CSV file should look something like this:
 
@@ -309,7 +317,7 @@ For each residential centroid, let's create\
 
 ![](images/paste-FBA4A08E.png)
 
-##### *Create Shortest Paths for Affected Residentials*
+#### *Create Shortest Paths for Affected Residentials*
 
 1\. Under Processing Toolbox, search for network and select the built-in tool, Service area (from\
 layer). You will create 4 temporary pairs of Service area (line) layers and Convex hulls layers\
@@ -323,23 +331,23 @@ each for 1km_affected and 2km_affected
 
 Below is an example of how your temporary Service area (lines) layer will look like:
 
-![](images/paste-FD77F515.png) 3. After each temporary Service area (lines) layer is added to your Layers panel, search for convex\
+![](images/paste-FD77F515.png)
+
+3\. After each temporary Service area (lines) layer is added to your Layers panel, search for convex\
 under Processing Toolbox and select Convex hull
 
-![](images/paste-2181CDAA.png) 4. Select Service (area) lines as your Input layer and click Run\
+![](images/paste-2181CDAA.png)
+
+4\. Select Service (area) lines as your Input layer and click Run\
 5. Another temporary layer, Convex hulls, is created under Layers panel
 
 ![](images/paste-9A68116F.png)
 
-4\. Select Service (area) lines as your Input layer and click Run\
-5. Another temporary layer, Convex hulls, is created under Layers panel\
-6. Save the above layer as 1kma_1kmshort_walking into your Project GeoPackage.\
+6\. Save the above layer as 1kma_1kmshort_walking into your Project GeoPackage.\
 7. Remove both temporary layers, Service area (lines) and Convex hulls from your Layers panel\
 8. Do the same for another 7 times, using parameter inputs as shown in the above table
 
-##### 
-
-*Find and Calculate the Number of Primary Schools Accessible by Buffers (1km_affected)*
+#### *Find and Calculate the Number of Primary Schools Accessible by Buffers (1km_affected)*
 
 Under the Vector menu bar, select Analysis Tools -\> Count Points in Polygon. You will create two pairs of\
 primary school count, one (consisting of all and curr) for each buffer
@@ -366,14 +374,14 @@ primary school count, one (consisting of all and curr) for each buffer
 8.  Remove curr and all from your Layers panel\
 9.  Repeat the above steps to create a new field, 2KM_BUFF_PERC_CHANGE
 
-##### *Find and Calculate the Number of Primary Schools Accessible by Walking the Shortest (1km_affected)*
+#### *Find and Calculate the Number of Primary Schools Accessible by Walking the Shortest (1km_affected)*
 
 Under the Vector menu bar, select Analysis Tools -\> Count Points in Polygon. You will create two pairs of\
 primary school count, one (consisting of all and curr) for each walking polygon ![](images/paste-D49896E7.png)
 
 With the steps above, create 1KM_SWALKING_PERC_CHANGE and 2KM_SWALKING_PERC_CHANGE
 
-##### *Find and Calculate the Number of Primary Schools Accessible by Drivingthe Shortest (1km_affected)*
+#### *Find and Calculate the Number of Primary Schools Accessible by Drivingthe Shortest (1km_affected)*
 
 Under the Vector menu bar, select Analysis Tools -\> Count Points in Polygon. You will create two pairs of\
 primary school count, one (consisting of all and curr) for each driving polygon ![](images/paste-94A4B216.png)

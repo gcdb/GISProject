@@ -9,3 +9,5 @@ With 183 primary schools in Singapore (as of 2019), parents of primary school st
 With recent mergers and closures of primary schools in the past few years, the government has mentioned about the due to shrinking school cohorts and declining birth rates. In order to visualize the negative effects of closures on the accessibility of schools for some students living in certain residential areas and subzones, using a geographic system would be helpful. As such, our team from SMU began working on this project to conduct geospatial analytics to analyze the possible decreased accessibility for certain families who have children studying in primary schools.
 
 ## [Link](https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69wssQCK/edit?usp=sharing&ouid=115568116821271386627&rtpof=true&sd=true) to full report
+
+## [Link](https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69wssQCK/edit?usp=sharing&ouid=115568116821271386627&rtpof=true&sd=true) to Project GitHub
