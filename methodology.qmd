@@ -3,8 +3,6 @@ title: "Methodology"
 editor: visual
 ---
 
-# Methodology
-
 Here's the [link](https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69wssQCK/edit?usp=sharing&ouid=115568116821271386627&rtpof=true&sd=true) to our project report.
 
 ## Data Preparation

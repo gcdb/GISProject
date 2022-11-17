@@ -1,8 +1,6 @@
 ---
-title: "Proposal"
+title: "Project Proposal"
 ---
-
-# Project Proposal
 
 Here's the [link](https://docs.google.com/document/d/1l8eFumflQ1cb8HYLWka9ujbsxcPFMzgQ/edit?usp=sharing&ouid=115568116821271386627&rtpof=true&sd=true) to our project proposal.
 
