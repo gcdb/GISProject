@@ -5,7 +5,7 @@ editor: visual
 
 Here's the [link](https://docs.google.com/document/d/1bIIGOzbnp0Wv_l7WOT4sib5V69wssQCK/edit?usp=sharing&ouid=115568116821271386627&rtpof=true&sd=true) to our project report.
 
-## Data Preparation
+## **Data Preparation**
 
 Before we begin, ensure that your QGIS active window has the correct projected coordinates system:\
 EPSG: 3414. For all subsequent layers used, do save them in 3414 before processing.
@@ -195,7 +195,7 @@ window would look like if the centroids are successfully created
 
 ![](images/paste-6D5B9F1C.png)
 
-## Data Cleaning
+## **Data Cleaning**
 
 ##### *Find the Relative Student to School Ratio in Subzones*
 
@@ -278,9 +278,8 @@ ii. Average out SP & FT\
     After we have created all 8 different layers via the shortest path and fastest time with QNEAT3, we can\
     calculate the number of affected residentials in each layer.\
 
-```{=html}
 <!-- -->
-```
+
 1.  Click on hex_residentials_centroids to activate the layer\
 2.  Using the Select Features by Freehand tool, trace the shape of each output polygon layer that\
     corresponds to the area around each closed school to find the number of residential centroids\
