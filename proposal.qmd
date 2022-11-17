@@ -24,31 +24,31 @@ Our main objective of carrying out this project is to conduct a geospatial analy
 
 For the purpose of this project, the following data sources have been used.
 
-|                                         File Name                                          |   File Format   |                                              Link to Data Source                                               |
-|:---------------------------:|:------------:|:---------------------------:|
-| Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020 |       csv       | https://www.singstat.gov.sg/-/media/files/find_data/population/statistical_tables/respopagesex2011to2020.ashx  |
-|                          master-plan-2019-subzone-boundary-no-sea                          | kml and geojson |                      https://data.gov.sg/dataset/master-plan-2019-subzone-boundary-no-sea                      |
-|                           malaysia-singapore-brunei-latest-free                            |    shapefile    |                       https://download.geofabrik.de/asia/malaysia-singapore-brunei.html                        |
-|                              school-directory-and-information                              |       csv       |                          https://data.gov.sg/dataset/school-directory-and-information                          |
+|                                         File Name                                          |   File Format   |                                              Link to Data Source                                              |
+|:--------------------------:|:---------------:|:--------------------------:|
+| Singapore Residents by Planning Area / Subzone, Single Year of Age and Sex, June 2011-2020 |       csv       | https://www.singstat.gov.sg/-/media/files/find_data/population/statistical_tables/respopagesex2011to2020.ashx |
+|                          master-plan-2019-subzone-boundary-no-sea                          | kml and geojson |                     https://data.gov.sg/dataset/master-plan-2019-subzone-boundary-no-sea                      |
+|                           malaysia-singapore-brunei-latest-free                            |    shapefile    |                       https://download.geofabrik.de/asia/malaysia-singapore-brunei.html                       |
+|                              school-directory-and-information                              |       csv       |                         https://data.gov.sg/dataset/school-directory-and-information                          |
 
 ## Scope of Work
 
 The project will comprise of, but not limited to the following steps:
 
-•	Selection of project area in Singapore, the year of the project area is determined to be 2019
+• Selection of project area in Singapore, the year of the project area is determined to be 2019
 
-•	Data collection, extraction, integration, transformation, and wrangling
+• Data collection, extraction, integration, transformation, and wrangling
 
-•	Designing and building GIS model
+• Designing and building GIS model
 
-•	Preparing report of project
+• Preparing report of project
 
-•	Performing suitable geospatial analysis by using GIS as well as other techniques
+• Performing suitable geospatial analysis by using GIS as well as other techniques
 
-•	Preparing poster and project webpage
+• Preparing poster and project webpage
 
-•	Recording of minute meetings for every project meeting
+• Recording of minute meetings for every project meeting
 
 ## Project Timeline
 
-![](images/GIS_T8_Project_Gantt_Chart1024_1.png){alt="Project Gantt Chart" fig-alt="Project Gantt Chart" fig-align="center"}
+![](images/GIS_T8_Project_Gantt_Chart1024_1.jpg)

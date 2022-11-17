@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./methodology.html" aria-current="page">Methodology</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./analysis.html">Analysis &amp; Lesson Learnt</a>
+    <a class="nav-link" href="./analysis.html">Analysis &amp; Discussion</a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./poster.html">Poster</a>
@@ -169,7 +169,7 @@ group by “SZ”, “Age”</p>
 4. Use Select by Expression tool in the attribute table to select:<br>
 Age in (7,8,9,10,11,12)<br>
 5. Use Field Calculator tool, create a new field containing Subzone names in uppercase:<br>
-Upper("SZ")<br>
+Upper(“SZ”)<br>
 6. Save Selected Feature as prisch_student_sz, untick geometry<br>
 7. Open mainland layer and join table</p>
 <p><img src="images/paste-BF9D02E4.png" class="img-fluid"></p>
@@ -177,7 +177,7 @@ Upper("SZ")<br>
 9. Use Select by Expression tool in the attribute table to select:<br>
 “prisch_student_sz_POP2019” is null</p>
 <p><br>
-10. Use Field Calculator to update mainland_joined's existing field NULL values to 0 <img src="images/paste-8C38A204.png" class="img-fluid"></p>
+10. Use Field Calculator to update mainland_joined’s existing field NULL values to 0 <img src="images/paste-8C38A204.png" class="img-fluid"></p>
 </section>
 <section id="section" class="level5">
 <h5 class="anchored" data-anchor-id="section"></h5>
@@ -209,7 +209,7 @@ console.</p>
 <p><img src="images/paste-C5961FD8.png" class="img-fluid"></p>
 <p>Now that we have more complete csv file, found.csv, we can add it in our QGIS as a point layer<br>
 1. Under the Layer menu bar, select Add Layer -&gt; Add Delimited Text Layer<br>
-2. Select the found.csv that you've just created and fill up the rest accordingly. Ensure that your<br>
+2. Select the found.csv that you’ve just created and fill up the rest accordingly. Ensure that your<br>
 Geometry CRS is in 3414.</p>
 <p><img src="images/paste-FEBB84F3.png" class="img-fluid"></p>
 <ol start="3" type="1">
@@ -388,6 +388,7 @@ After we have created all 8 different layers via the shortest path and fastest t
 calculate the number of affected residentials in each layer.<br>
 </li>
 </ol>
+<!-- -->
 <ol type="1">
 <li>Click on hex_residentials_centroids to activate the layer<br>
 </li>
@@ -406,7 +407,7 @@ residentials that have been affected.<br>
 From the 88 and 290 affected residential centroids obtain within the 1km and 2km buffer respectively,<br>
 we will first count the number of primary schools accessible via buffers, shortest path by walking and<br>
 shortest path by driving before and after merger. Afterwards, we will derive the percentage change.<br>
-For each residential centroid, let's create<br>
+For each residential centroid, let’s create<br>
 1. A 1km buffer<br>
 2. A 2km buffer<br>
 3. A 1km shortest network path by walking<br>

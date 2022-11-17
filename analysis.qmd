@@ -26,8 +26,7 @@ Malcom subzone has a lot of schools but relatively a lot fewer student count.
 According to Statista, the enrolment has been showing a downward trend since 2011 and only sees a\
 small spike in 2019.
 
-![](images/paste-4E878357.png)
-![](images/paste-D3F6E116.png)
+![](images/paste-4E878357.png) ![](images/paste-D3F6E116.png)
 
 This data is in line with the data for declining birthrate since 2015 as shown below.
 
@@ -66,7 +65,7 @@ one of the greatest as compared to the other subzones of Singapore. By closing 3
 make sense to reduce the school count and balance the ratio of schools to students in the area. In the\
 Central region and especially where East Coast Primary School and Macpherson Primary School were\
 once located, the subzones also mostly show a larger proportion of schools to students, which does\
-correspond to the government\'s decision to close these 2 schools. However, Balestier Hill Primary\
+correspond to the government's decision to close these 2 schools. However, Balestier Hill Primary\
 School (located centrally) and Da Qiao Primary School (located in the North) have subzones where the\
 ratio of schools to students are roughly equal as compared to all the subzones in Singapore. By using the\
 same deduction, the closure of these 2 schools would result in a higher student to school ratio, equating\
@@ -88,7 +87,7 @@ discovered that 3/5 of them still have the same number of primary schools access
 than a driving distance of 2km. An interesting note is that due to the short distance travelled, the change\
 in accessibility did not vary much between the two different transport modes. One obvious difference\
 between walking and driving is that the residentials who walked had a greater proportion of more than\
-50% reduction in accessibility. This means that while there is some disruption to the residents\'\
+50% reduction in accessibility. This means that while there is some disruption to the residents'\
 accessibility, the impact is not too great.
 
 ![](images/paste-C76071B4.png)
@@ -128,9 +127,9 @@ computationally intensive.
 
 ## Lessons Learnt
 
-Tristan\'s:\
+Tristan's:\
 • Geospatial Analysis is an essential tool for human visualization of the number of schools that are\
-in someone\'s proximity area, and how fortunate Singaporeans are that their children have\
+in someone's proximity area, and how fortunate Singaporeans are that their children have\
 relatively easy access via walking or private transport to schools\
 • Most subzones in Singapore have a higher proportion of schools to students, which also show\
 how students currently will most likely be able to enroll into a school in their residential area.\
@@ -141,7 +140,7 @@ residentials that have no or limited access to schools due to the closure of sch
 certain proximity distance should be given priority in terms of enrolment and registration.
 
 \
-Mahn Yin\'s:\
+Mahn Yin's:\
 • Having done the analysis on the subzone and primary school made me appreciate the\
 meticulous planning done by the relevant parties even more\
 • Accessibility to schools should not be taken for granted -- every child in Singapore is guaranteed\
@@ -149,7 +148,7 @@ access to education, yet some countries struggle to provide education for even a
 their children.
 
 \
-Jia Xuan\'s:\
+Jia Xuan's:\
 • Accessibility to schools can be measured in different metrics. My project group decided to focus\
 on one metric, which is the number of points (schools/residential centroids). Despite having only\
 one metric, we approached itfromn two different perspectives for a deeper insight into our\
@@ -162,7 +161,7 @@ be balanced out
 ## Future Works
 
 -   With Singapore expanding her bus and train networks, our work can be extended to include an\
-    analysis of students\' accessibility via public transport
+    analysis of students' accessibility via public transport
 
 -   With past and future closures/mergers before and beyond 2019 respectively, future work can be\
     done to identify possible patterns as to why closures and mergers happen in designated\
